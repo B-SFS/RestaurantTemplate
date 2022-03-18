@@ -1,0 +1,118 @@
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\Restaurant Template.dll.config
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\Restaurant Template.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\Restaurant Template.pdb
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\csc.exe
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\csc.exe.config
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\csc.rsp
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\csi.exe
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\csi.exe.config
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\csi.rsp
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.AppContext.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Console.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.IO.Compression.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Net.Http.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Net.Sockets.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.ValueTuple.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Xml.XPath.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\vbc.exe
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\vbc.exe.config
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\vbc.rsp
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\VBCSCompiler.exe
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\obj\Debug\Restaurant Template.csproj.AssemblyReference.cache
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\obj\Debug\Restaurant Template.csproj.CoreCompileInputs.cache
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\obj\Debug\Restaurant Template.csproj.CopyComplete
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\obj\Debug\Restaurant Template.dll
+C:\Users\SuhaibSilwadi\source\repos\Restaurant Template\Restaurant Template\obj\Debug\Restaurant Template.pdb
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\Restaurant Template.dll.config
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\Restaurant Template.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\Restaurant Template.pdb
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\csc.exe
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\csc.exe.config
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\csc.rsp
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\csi.exe
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\csi.exe.config
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\csi.rsp
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.AppContext.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Console.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.IO.Compression.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Net.Http.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Net.Sockets.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.ValueTuple.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Xml.XPath.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\vbc.exe
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\vbc.exe.config
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\vbc.rsp
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\VBCSCompiler.exe
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\obj\Debug\Restaurant Template.csproj.AssemblyReference.cache
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\obj\Debug\Restaurant Template.csproj.CoreCompileInputs.cache
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\obj\Debug\Restaurant Template.csproj.CopyComplete
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\obj\Debug\Restaurant Template.dll
+C:\Users\SuhaibSilwadi\Desktop\F_S_W_D_TT\ForntEnd\html+css+js+bootstrap\projects\Restaurant Template\Restaurant Template\obj\Debug\Restaurant Template.pdb

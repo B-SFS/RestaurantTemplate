@@ -1,0 +1,896 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3935AE3-AC1F-43EB-ABC2-052195C72780}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Restaurant_Template</RootNamespace>
+    <AssemblyName>Restaurant Template</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44310</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Plugins\bootstrap-datepicker-master\.gitignore" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\css\bootstrap-datepicker.css" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\css\bootstrap-datepicker.min.css" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\css\bootstrap-datepicker.standalone.css" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\css\bootstrap-datepicker.standalone.min.css" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\css\bootstrap-datepicker3.css" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\css\bootstrap-datepicker3.min.css" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\css\bootstrap-datepicker3.standalone.css" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\css\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\js\bootstrap-datepicker.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\js\bootstrap-datepicker.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker-en-CA.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.ar-tn.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.ar.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.az.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.bg.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.bm.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.bn.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.br.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.bs.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.ca.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.cs.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.cy.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.da.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.de.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.el.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.en-AU.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.en-CA.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.en-GB.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.en-IE.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.en-NZ.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.en-ZA.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.eo.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.es.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.et.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.eu.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.fa.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.fi.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.fo.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.fr-CH.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.fr.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.gl.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.he.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.hi.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.hr.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.hu.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.hy.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.id.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.is.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.it-CH.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.it.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.ja.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.ka.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.kh.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.kk.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.km.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.ko.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.kr.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.lt.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.lv.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.me.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.mk.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.mn.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.ms.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.nl-BE.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.nl.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.no.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.oc.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.pl.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.pt-BR.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.pt.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.ro.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.rs-latin.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.rs.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.ru.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.si.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.sk.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.sl.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.sq.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.sr-latin.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.sr.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.sv.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.sw.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.ta.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.tg.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.th.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.tk.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.tr.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.uk.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.uz-cyrl.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.uz-latn.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.vi.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\locales\bootstrap-datepicker.zh-TW.min.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\conf.py" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\requirements.txt" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\screenshots.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\assets\common.css" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\assets\common.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\demo_head.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\markup_component.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\markup_daterange.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\markup_inline.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\markup_input.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\option_calendarweeks.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\option_clearbtn.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\option_daysofweekdisabled.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\option_enddate.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\option_language.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\option_multidate.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\option_showweekdays.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\option_startdate.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\option_todaybtn.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\option_todayhighlight.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_screenshots\option_weekstart.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\demo_head.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\markup_component.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\markup_daterange.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\markup_inline.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\markup_input.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\option_calendarweeks.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\option_clearbtn.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\option_daysofweekdisabled.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\option_enddate.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\option_language.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\option_multidate.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\option_showweekdays.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\option_startdate.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\option_todaybtn.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\option_todayhighlight.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\_static\screenshots\option_weekstart.png" />
+    <Content Include="Plugins\bootstrap-datepicker-master\Gruntfile.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\bootstrap-datepicker.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker-en-CA.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.ar-DZ.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.ar-tn.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.ar.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.az.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.bg.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.bm.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.bn.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.br.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.bs.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.ca.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.cs.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.cy.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.da.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.de.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.el.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.en-AU.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.en-CA.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.en-GB.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.en-IE.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.en-NZ.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.en-US.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.en-ZA.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.eo.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.es.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.et.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.eu.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.fa.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.fi.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.fo.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.fr-CH.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.fr.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.gl.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.he.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.hi.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.hr.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.hu.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.hy.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.id.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.is.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.it-CH.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.it.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.ja.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.ka.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.kh.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.kk.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.km.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.ko.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.kr.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.lt.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.lv.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.me.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.mk.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.mn.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.mr.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.ms.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.nl-BE.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.nl.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.no.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.oc.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.pl.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.pt-BR.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.pt.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.ro.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.rs-latin.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.rs.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.ru.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.si.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.sk.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.sl.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.sq.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.sr-latin.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.sr.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.sv.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.sw.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.ta.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.tg.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.th.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.tk.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.tr.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.uk.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.uz-cyrl.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.uz-latn.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.vi.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.zh-CN.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\locales\bootstrap-datepicker.zh-TW.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\assets\coverage.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\assets\mock.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\assets\qunit-logging.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\assets\qunit.css" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\assets\qunit.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\assets\utils.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\calendar-weeks.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\component.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\data-api.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\events.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\formats.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\inline.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\keyboard_navigation\2011.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\keyboard_navigation\2012.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\keyboard_navigation\all.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\methods.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\methods_jquery.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\mouse_navigation\2011.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\mouse_navigation\2012.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\mouse_navigation\all.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\noconflict.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\options.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\timezone.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\suites\touch_navigation\all.js" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\tests.html" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\timezone.html" />
+    <Content Include="Plugins\Hover-master\.gitignore" />
+    <Content Include="Plugins\Hover-master\css\demo-page.css" />
+    <Content Include="Plugins\Hover-master\css\hover-min.css" />
+    <Content Include="Plugins\Hover-master\css\hover.css" />
+    <Content Include="Plugins\Hover-master\Gruntfile.js" />
+    <Content Include="Plugins\Hover-master\hover.jpg" />
+    <Content Include="Plugins\Hover-master\index.html" />
+    <Content Include="Plugins\Hover-master\license.txt" />
+    <Content Include="Plugins\Hover-master\logo-transparent.png" />
+    <Content Include="Plugins\Hover-master\modern-slide-in.png" />
+    <Content Include="Plugins\Hover-master\photo-stack.png" />
+    <Content Include="Plugins\Hover-master\sequence-logo.png" />
+    <Content Include="Plugins\Hover-master\two-up.png" />
+    <Content Include="Plugins\jquery-nice-select-master\.gitignore" />
+    <Content Include="Plugins\jquery-nice-select-master\css\nice-select.css" />
+    <Content Include="Plugins\jquery-nice-select-master\css\style.css" />
+    <Content Include="Plugins\jquery-nice-select-master\gulpfile.js" />
+    <Content Include="Plugins\jquery-nice-select-master\index.html" />
+    <Content Include="Plugins\jquery-nice-select-master\js\fastclick.js" />
+    <Content Include="Plugins\jquery-nice-select-master\js\jquery.js" />
+    <Content Include="Plugins\jquery-nice-select-master\js\jquery.nice-select.js" />
+    <Content Include="Plugins\jquery-nice-select-master\js\jquery.nice-select.min.js" />
+    <Content Include="Plugins\jquery-nice-select-master\js\prism.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\.gitattributes" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\.gitignore" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\dist\assets\ajax-loader.gif" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\dist\assets\owl.carousel.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\dist\assets\owl.carousel.min.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\dist\assets\owl.theme.default.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\dist\assets\owl.theme.green.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\dist\assets\owl.theme.green.min.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\dist\assets\owl.video.play.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\dist\owl.carousel.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\dist\owl.carousel.min.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\css\animate.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\css\docs.theme.min.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\img\bird_blue_32.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\img\download.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\img\feature-drag.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\img\feature-modern.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\img\feature-module.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\img\feature-options.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\img\feature-responsive.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\img\feature-zombie.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\img\owl-logo.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\img\twitter_25.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\js\app.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\js\foundation.min.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\owlcarousel\owl.carousel.min.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\vendors\foundation.min.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\vendors\highlight.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.mousewheel.min.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\animate.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\autoheight.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\autoplay.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\autowidth.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\basic.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\center.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\demos.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\events.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\lazyLoad.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\merge.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\mousewheel.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\responsive.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\rtl.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\stagepadding.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\test.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\urlhashnav.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\demos\video.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\docs\api-classes.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\docs\api-events.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\docs\api-options.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\docs\dev-buildin-plugins.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\docs\dev-external.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\docs\dev-plugin-api.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\docs\dev-styles.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\docs\started-faq.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\docs\started-installation.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\docs\started-welcome.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\docs\support-changelog.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\docs\support-contact.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\docs\support-contributing.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\index.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\css\animate.css" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\img\bird_blue_32.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\img\download.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\img\feature-drag.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\img\feature-modern.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\img\feature-module.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\img\feature-options.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\img\feature-responsive.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\img\feature-zombie.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\img\owl-logo.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\img\twitter_25.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\js\app.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\js\foundation.min.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\vendors\foundation.min.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\vendors\highlight.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\vendors\jquery.min.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\vendors\jquery.mousewheel.min.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\helpers\modulo.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\helpers\test.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\Gruntfile.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\img\ajax-loader.gif" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\img\owl.video.play.png" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\js\owl.animate.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\js\owl.autoheight.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\js\owl.autoplay.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\js\owl.autorefresh.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\js\owl.carousel.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\js\owl.hash.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\js\owl.lazyload.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\js\owl.navigation.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\js\owl.support.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\js\owl.support.modernizr.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\js\owl.video.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\test\index.html" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\test\unit\autoplay.js" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\test\unit\core.js" />
+    <Content Include="Web.config" />
+    <Content Include="wwwt\css\bootstrap.min.css" />
+    <Content Include="wwwt\css\Restaurant.css" />
+    <Content Include="wwwt\html\Contact Us.html" />
+    <Content Include="wwwt\html\Home.html" />
+    <Content Include="wwwt\html\Menu.html" />
+    <Content Include="wwwt\Image\burger.jpg" />
+    <Content Include="wwwt\Image\desert1.jpg" />
+    <Content Include="wwwt\Image\Dessert-food-35554326-2300-1515.jpg" />
+    <Content Include="wwwt\Image\dessert2.jpg" />
+    <Content Include="wwwt\Image\dessert4.jpg" />
+    <Content Include="wwwt\Image\dessert5.png" />
+    <Content Include="wwwt\Image\food.jpg" />
+    <Content Include="wwwt\Image\Four-Layer-Pecan-Pie_ExtraLarge1000_ID-1087498.jpg" />
+    <Content Include="wwwt\Image\logo.jpg" />
+    <Content Include="wwwt\Image\mansaf-jordanian-food-19-X3.jpg" />
+    <Content Include="wwwt\Image\maqluba-jordanian-food.jpg" />
+    <Content Include="wwwt\Image\maxresdefault.jpg" />
+    <Content Include="wwwt\Image\Oozie-Recipe.jpg" />
+    <Content Include="wwwt\Image\person1.jpg" />
+    <Content Include="wwwt\Image\person2.png" />
+    <Content Include="wwwt\Image\person3.jpeg" />
+    <Content Include="wwwt\Image\person4.jpg" />
+    <Content Include="wwwt\Image\person5.jpg" />
+    <Content Include="wwwt\Image\salad.jpg" />
+    <Content Include="wwwt\Image\Sushi.jpg" />
+    <Content Include="wwwt\Image\tako.jpg" />
+    <Content Include="wwwt\Image\wood.jpg" />
+    <Content Include="wwwt\js\bootstrap.bundle.min.js" />
+    <Content Include="wwwt\js\bootstrap.min.js" />
+    <Content Include="wwwt\js\JavaScript.js" />
+    <Content Include="wwwt\js\jquery-3.6.0.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Plugins\jquery-nice-select-master\bower.json" />
+    <Content Include="Plugins\jquery-nice-select-master\dropdown.sketch" />
+    <Content Include="Plugins\jquery-nice-select-master\package.json" />
+    <Content Include="Plugins\jquery-nice-select-master\README.md" />
+    <Content Include="Plugins\jquery-nice-select-master\scss\nice-select.scss" />
+    <Content Include="Plugins\jquery-nice-select-master\scss\style.scss" />
+    <Content Include="Plugins\jquery-nice-select-master\scss\_nice-select-prefixed.scss" />
+    <Content Include="Plugins\jquery-nice-select-master\scss\_prism.scss" />
+    <Content Include="Plugins\Hover-master\.editorconfig" />
+    <Content Include="Plugins\Hover-master\bower.json" />
+    <Content Include="Plugins\Hover-master\CONTRIBUTING.md" />
+    <Content Include="Plugins\Hover-master\css\hover.css.map" />
+    <Content Include="Plugins\Hover-master\HISTORY.md" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_backward.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_bob.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_bounce-in.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_bounce-out.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_buzz-out.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_buzz.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_float.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_forward.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_grow-rotate.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_grow.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_hang.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_pop.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_pulse-grow.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_pulse-shrink.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_pulse.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_push.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_rotate.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_shrink.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_sink.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_skew-backward.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_skew-forward.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_skew.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_wobble-bottom.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_wobble-horizontal.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_wobble-skew.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_wobble-to-bottom-right.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_wobble-to-top-right.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_wobble-top.less" />
+    <Content Include="Plugins\Hover-master\less\effects\2d-transitions\_wobble-vertical.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_back-pulse.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_bounce-to-bottom.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_bounce-to-left.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_bounce-to-right.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_bounce-to-top.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_fade.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_radial-in.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_radial-out.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_rectangle-in.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_rectangle-out.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_shutter-in-horizontal.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_shutter-in-vertical.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_shutter-out-horizontal.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_shutter-out-vertical.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_sweep-to-bottom.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_sweep-to-left.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_sweep-to-right.less" />
+    <Content Include="Plugins\Hover-master\less\effects\background-transitions\_sweep-to-top.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_border-fade.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_hollow.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_outline-in.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_outline-out.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_overline-from-center.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_overline-from-left.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_overline-from-right.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_overline-reveal.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_reveal.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_ripple-in.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_ripple-out.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_round-corners.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_trim.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_underline-from-center.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_underline-from-left.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_underline-from-right.less" />
+    <Content Include="Plugins\Hover-master\less\effects\border-transitions\_underline-reveal.less" />
+    <Content Include="Plugins\Hover-master\less\effects\curls\_curl-bottom-left.less" />
+    <Content Include="Plugins\Hover-master\less\effects\curls\_curl-bottom-right.less" />
+    <Content Include="Plugins\Hover-master\less\effects\curls\_curl-top-left.less" />
+    <Content Include="Plugins\Hover-master\less\effects\curls\_curl-top-right.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-back.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-bob.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-bounce-out.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-bounce.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-buzz-out.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-buzz.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-down.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-drop.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-fade.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-float-away.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-float.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-forward.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-grow-rotate.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-grow.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-hang.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-pop.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-pulse-grow.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-pulse-shrink.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-pulse.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-push.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-rotate.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-shrink.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-sink-away.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-sink.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-spin.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-up.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-wobble-horizontal.less" />
+    <Content Include="Plugins\Hover-master\less\effects\icons\_icon-wobble-vertical.less" />
+    <Content Include="Plugins\Hover-master\less\effects\shadow-and-glow-transitions\_box-shadow-inset.less" />
+    <Content Include="Plugins\Hover-master\less\effects\shadow-and-glow-transitions\_box-shadow-outset.less" />
+    <Content Include="Plugins\Hover-master\less\effects\shadow-and-glow-transitions\_float-shadow.less" />
+    <Content Include="Plugins\Hover-master\less\effects\shadow-and-glow-transitions\_glow.less" />
+    <Content Include="Plugins\Hover-master\less\effects\shadow-and-glow-transitions\_grow-shadow.less" />
+    <Content Include="Plugins\Hover-master\less\effects\shadow-and-glow-transitions\_shadow-radial.less" />
+    <Content Include="Plugins\Hover-master\less\effects\shadow-and-glow-transitions\_shadow.less" />
+    <Content Include="Plugins\Hover-master\less\effects\speech-bubbles\_bubble-bottom.less" />
+    <Content Include="Plugins\Hover-master\less\effects\speech-bubbles\_bubble-float-bottom.less" />
+    <Content Include="Plugins\Hover-master\less\effects\speech-bubbles\_bubble-float-left.less" />
+    <Content Include="Plugins\Hover-master\less\effects\speech-bubbles\_bubble-float-right.less" />
+    <Content Include="Plugins\Hover-master\less\effects\speech-bubbles\_bubble-float-top.less" />
+    <Content Include="Plugins\Hover-master\less\effects\speech-bubbles\_bubble-left.less" />
+    <Content Include="Plugins\Hover-master\less\effects\speech-bubbles\_bubble-right.less" />
+    <Content Include="Plugins\Hover-master\less\effects\speech-bubbles\_bubble-top.less" />
+    <Content Include="Plugins\Hover-master\less\hover.less" />
+    <Content Include="Plugins\Hover-master\less\_hacks.less" />
+    <Content Include="Plugins\Hover-master\less\_mixins.less" />
+    <Content Include="Plugins\Hover-master\less\_options.less" />
+    <Content Include="Plugins\Hover-master\package.json" />
+    <Content Include="Plugins\Hover-master\README.md" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_backward.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_bob.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_bounce-in.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_bounce-out.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_buzz-out.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_buzz.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_float.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_forward.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_grow-rotate.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_grow.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_hang.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_pop.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_pulse-grow.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_pulse-shrink.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_pulse.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_push.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_rotate.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_shrink.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_sink.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_skew-backward.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_skew-forward.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_skew.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_wobble-bottom.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_wobble-horizontal.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_wobble-skew.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_wobble-to-bottom-right.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_wobble-to-top-right.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_wobble-top.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\2d-transitions\_wobble-vertical.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_back-pulse.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_bounce-to-bottom.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_bounce-to-left.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_bounce-to-right.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_bounce-to-top.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_fade.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_radial-in.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_radial-out.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_rectangle-in.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_rectangle-out.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_shutter-in-horizontal.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_shutter-in-vertical.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_shutter-out-horizontal.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_shutter-out-vertical.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_sweep-to-bottom.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_sweep-to-left.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_sweep-to-right.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\background-transitions\_sweep-to-top.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_border-fade.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_hollow.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_outline-in.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_outline-out.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_overline-from-center.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_overline-from-left.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_overline-from-right.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_overline-reveal.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_reveal.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_ripple-in.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_ripple-out.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_round-corners.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_trim.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_underline-from-center.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_underline-from-left.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_underline-from-right.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\border-transitions\_underline-reveal.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\curls\_curl-bottom-left.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\curls\_curl-bottom-right.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\curls\_curl-top-left.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\curls\_curl-top-right.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-back.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-bob.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-bounce-out.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-bounce.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-buzz-out.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-buzz.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-down.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-drop.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-fade.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-float-away.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-float.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-forward.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-grow-rotate.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-grow.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-hang.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-pop.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-pulse-grow.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-pulse-shrink.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-pulse.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-push.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-rotate.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-shrink.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-sink-away.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-sink.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-spin.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-up.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-wobble-horizontal.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\icons\_icon-wobble-vertical.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\shadow-and-glow-transitions\_box-shadow-inset.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\shadow-and-glow-transitions\_box-shadow-outset.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\shadow-and-glow-transitions\_float-shadow.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\shadow-and-glow-transitions\_glow.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\shadow-and-glow-transitions\_grow-shadow.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\shadow-and-glow-transitions\_shadow-radial.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\shadow-and-glow-transitions\_shadow.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\speech-bubbles\_bubble-bottom.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\speech-bubbles\_bubble-float-bottom.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\speech-bubbles\_bubble-float-left.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\speech-bubbles\_bubble-float-right.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\speech-bubbles\_bubble-float-top.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\speech-bubbles\_bubble-left.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\speech-bubbles\_bubble-right.scss" />
+    <Content Include="Plugins\Hover-master\scss\effects\speech-bubbles\_bubble-top.scss" />
+    <Content Include="Plugins\Hover-master\scss\hover.scss" />
+    <Content Include="Plugins\Hover-master\scss\_hacks.scss" />
+    <Content Include="Plugins\Hover-master\scss\_mixins.scss" />
+    <Content Include="Plugins\Hover-master\scss\_options.scss" />
+    <Content Include="Plugins\bootstrap-datepicker-master\.editorconfig" />
+    <Content Include="Plugins\bootstrap-datepicker-master\.github\ISSUE_TEMPLATE.md" />
+    <Content Include="Plugins\bootstrap-datepicker-master\.github\PULL_REQUEST_TEMPLATE.md" />
+    <Content Include="Plugins\bootstrap-datepicker-master\.github\workflows\ci.yaml" />
+    <Content Include="Plugins\bootstrap-datepicker-master\bower.json" />
+    <Content Include="Plugins\bootstrap-datepicker-master\build\build.less" />
+    <Content Include="Plugins\bootstrap-datepicker-master\build\build3.less" />
+    <Content Include="Plugins\bootstrap-datepicker-master\build\build_standalone.less" />
+    <Content Include="Plugins\bootstrap-datepicker-master\build\build_standalone3.less" />
+    <Content Include="Plugins\bootstrap-datepicker-master\CHANGELOG.md" />
+    <Content Include="Plugins\bootstrap-datepicker-master\CODE_OF_CONDUCT.md" />
+    <Content Include="Plugins\bootstrap-datepicker-master\composer.json" />
+    <Content Include="Plugins\bootstrap-datepicker-master\CONTRIBUTING.md" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\css\bootstrap-datepicker.css.map" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\css\bootstrap-datepicker.standalone.css.map" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\css\bootstrap-datepicker3.css.map" />
+    <Content Include="Plugins\bootstrap-datepicker-master\dist\css\bootstrap-datepicker3.standalone.css.map" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\events.rst" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\i18n.rst" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\index.rst" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\keyboard.rst" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\make.bat" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\Makefile" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\markup.rst" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\methods.rst" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\options.rst" />
+    <Content Include="Plugins\bootstrap-datepicker-master\docs\README.md" />
+    <Content Include="Plugins\bootstrap-datepicker-master\grunt\.jshintrc" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\.jscsrc" />
+    <Content Include="Plugins\bootstrap-datepicker-master\js\.jshintrc" />
+    <Content Include="Plugins\bootstrap-datepicker-master\less\.csslintrc" />
+    <Content Include="Plugins\bootstrap-datepicker-master\less\datepicker.less" />
+    <Content Include="Plugins\bootstrap-datepicker-master\less\datepicker3.less" />
+    <Content Include="Plugins\bootstrap-datepicker-master\LICENSE" />
+    <Content Include="Plugins\bootstrap-datepicker-master\package.json" />
+    <Content Include="Plugins\bootstrap-datepicker-master\README.md" />
+    <Content Include="Plugins\bootstrap-datepicker-master\tests\README.md" />
+    <Content Include="Plugins\bootstrap-datepicker-master\yarn.lock" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\.travis.yml" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\bower.json" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\CONTRIBUTING.md" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\dist\LICENSE" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\dist\README.md" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\owlcarousel\README.md" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.map" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\scss\custom.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\scss\demos.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.theme.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\scss\highlight.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\scss\_settings.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\assets\vendors\jquery.min.map" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\data\classes.json" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\data\events.json" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\data\features.json" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\data\options.json" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\layouts\demos.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\layouts\docs.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\layouts\home.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\animate.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\autoheight.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\autoplay.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\autowidth.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\basic.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\center.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\demos.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\events.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\lazyLoad.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\merge.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\mousewheel.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\responsive.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\rtl.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\stagepadding.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\test.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\urlhashnav.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\demos\video.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\api-classes.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\api-events.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\api-options.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-buildin-plugins.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-external.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-plugin-api.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\dev-styles.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\started-faq.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\started-installation.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\started-welcome.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\support-changelog.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\support-contact.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\docs\support-contributing.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\pages\index.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\partials\footer.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\partials\head.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\partials\header.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\partials\home-carousel.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\partials\home-features.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\partials\home-hero.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\partials\home-teaser-text.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\partials\javascripts.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\partials\releated-docs.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\partials\sidenav-docs.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\partials\title.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\docs_src\templates\partials\vendors.hbs" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\ISSUE_TEMPLATE.md" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\LICENSE" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\package-lock.json" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\package.json" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\README.md" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\ROADMAP.md" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\js\.jscsrc" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\js\.jshintrc" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\scss\owl.carousel.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\scss\owl.theme.default.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\scss\owl.theme.green.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\scss\_animate.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\scss\_autoheight.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\scss\_core.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\scss\_lazyload.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\scss\_theme.default.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\scss\_theme.green.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\scss\_theme.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\src\scss\_video.scss" />
+    <Content Include="Plugins\OwlCarousel2-2.3.4\_config.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54954</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44310/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
